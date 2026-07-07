@@ -2,7 +2,7 @@
 
 **Portfolio Project by Nimrah Ashraf**
 
-An Oracle SQL portfolio project that models a public transit system using relational database design, SQL views, and business reporting. This project demonstrates database design, data relationships, and analytical SQL queries for a fictional transit system.
+An Oracle SQL portfolio project that models a public transit system using relational database design, SQL views, and business reporting. This project demonstrates database design principles, table relationships, and analytical SQL queries through a fictional public transit system.
 
 ---
 
@@ -35,20 +35,24 @@ The database supports business reporting by analyzing rider activity, transit us
 - Four normalized relational tables
 - Primary and foreign key relationships
 - SQL view (`TripSummary`) for simplified reporting
-- Data validation using CHECK constraints
+- CHECK constraints for data validation
 - Indexes to improve query performance
 
 ---
 
 ## Entity-Relationship (ER) Diagram
 
-![ER Diagram](er-diagram-titled.png)
+The ER diagram illustrates the relationships between the core entities in the Transit Analytics Database.
+
+![Entity-Relationship Diagram](er-diagram.png)
 
 ---
 
 ## Database Schema
 
-![Database Schema](database-schema-titled.png)
+The database schema provides a detailed view of each table, including primary keys, foreign keys, constraints, indexes, and the reporting view.
+
+![Database Schema](database-schema.png)
 
 ---
 
@@ -56,17 +60,17 @@ The database supports business reporting by analyzing rider activity, transit us
 
 ### Complete Trip History
 
-Displays every transit trip with rider information, route details, station information, travel period, trip date, and fare.
+Displays every transit trip with rider information, transit route, station, travel period, trip date, and fare.
 
-![Complete Trip History](Complete Trip History.png)
+![Complete Trip History](trip-history-report.png)
 
 ---
 
 ### Revenue by Route
 
-Summarizes the total number of trips and revenue generated for each transit route.
+Summarizes the total number of trips and total revenue generated for each transit route.
 
-![Revenue by Route](Revenue By Route.png)
+![Revenue by Route](revenue-by-route.png)
 
 ---
 
@@ -74,7 +78,7 @@ Summarizes the total number of trips and revenue generated for each transit rout
 
 Displays the number of trips taken by each rider membership type.
 
-![Trips by Membership Type](Trips by Membership Type.png)
+![Trips by Membership Type](trips-by-membership-type.png)
 
 ---
 
@@ -82,7 +86,7 @@ Displays the number of trips taken by each rider membership type.
 
 Calculates the average fare for each mode of transportation.
 
-![Average Fare by Transit Type](Average Fare by Transit Type.png)
+![Average Fare by Transit Type](average-fare-by-transit-type.png)
 
 ---
 
@@ -90,7 +94,7 @@ Calculates the average fare for each mode of transportation.
 
 - Primary Keys
 - Foreign Keys
-- Table Relationships
+- Relational Database Design
 - SQL Views
 - Aggregate Functions
 - `GROUP BY`
@@ -106,21 +110,23 @@ Calculates the average fare for each mode of transportation.
 
 ## Repository Contents
 
-- `schema.sql` – Creates the database tables, constraints, indexes, and reporting view.
-- `data.sql` – Inserts sample transit data.
-- `queries.sql` – Contains business reporting and analytics queries.
-- ER Diagram
-- Database Schema
-- Sample Report Screenshots
+| File | Description |
+|------|-------------|
+| `schema.sql` | Creates the database tables, constraints, indexes, and reporting view. |
+| `data.sql` | Inserts sample transit data into the database. |
+| `queries.sql` | Contains business reporting and analytical SQL queries. |
+| `er-diagram.png` | Entity-Relationship diagram of the database. |
+| `database-schema.png` | Database schema showing tables, keys, constraints, and indexes. |
 
 ---
 
 ## Future Improvements
 
-- Add payment methods
-- Expand the dataset
-- Monthly reporting
-- Interactive dashboard integration
+- Add payment methods and fare transactions
+- Expand the dataset with additional riders, routes, and stations
+- Generate monthly and yearly reporting
+- Build an interactive dashboard for transit analytics
+- Create stored procedures and triggers for additional business logic
 
 ---
 
@@ -130,4 +136,4 @@ Calculates the average fare for each mode of transportation.
 
 Master's Student in Computer Science
 
-Interested in Software Engineering, Artificial Intelligence, and Human-Computer Interaction.
+Interested in Software Engineering, Artificial Intelligence, Human-Computer Interaction, and Data-Driven System Design.
